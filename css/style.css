@@ -162,7 +162,8 @@ img {
 
 .link,
 .header-link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -189,6 +190,11 @@ img {
 
 .header-link {
     color: var(--paragraph-color);
+}
+
+.header-link .header-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 
