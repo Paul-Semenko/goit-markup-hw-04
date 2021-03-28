@@ -68,7 +68,8 @@ img {
 .footer-logo,
 .site-nav .link,
 .header-link,
-.footer-link {
+.footer-link,
+.portfolio-link {
     text-decoration: none;
 }
 
@@ -258,6 +259,12 @@ img {
     overflow: hidden;
 }
 
+.portfolio-link:hover .box,
+.portfolio-link:focus .box {
+    border: 1px solid var(--card-border);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +359,61 @@ img {
 
 .footer-link {
     color: var(--links-color);
+}
+
+
+/*----------Footer Social Links-------------*/
+
+.footer-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
+.social-links {
+    display: block;
+}
+
+.social-title {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--main-background);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.social-item {
+    display: flex;
+}
+
+.link-list+.link-list {
+    margin-left: 10px;
+}
+
+.social-item .item {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-background);
+}
+
+.social-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--footer-links-color);
+}
+
+.social-contacts:hover,
+.social-contacts:focus {
+    background-color: var(--accent-color);
 }
 
 
